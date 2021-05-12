@@ -4,6 +4,10 @@ from collections import defaultdict
 
 from sklearn.model_selection import train_test_split
 
+import sys
+# allows imports from parent
+sys.path.insert(1, os.path.join(sys.path[0], '..'))
+
 from constants import FNC, STANCE, NLI, TOPIC, LAPTOP, RESTAURANT, TARGET,\
     TOPIC_5WAY, STANCE_LABELS, FNC_LABELS, NLI_LABELS, TOPIC_LABELS, \
     TOPIC_5WAY_LABELS, ABSA_LABELS, TARGET_LABELS
